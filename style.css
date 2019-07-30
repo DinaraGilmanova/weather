@@ -1,0 +1,44 @@
+
+.days {
+display: block-inline;
+ background: #6f9dbe; 
+ background: -webkit-gradient(linear, left top, left bottom, from(#adc7db), to(#6f9dbe));
+ background: -moz-linear-gradient(top, #b2bcc8, #adc7db);
+ } 
+ .day {
+
+width: 22%;
+height: 20em;
+margin: 0.2%;
+background: #8CC7DF;
+color: #fff;
+display: block;
+float: left;
+padding: 1em;
+cursor: pointer;
+position: relative;
+} 
+ .weather--h2 { margin:2px 0 0; color: #000; text-shadow: rgba(250, 250, 250, 0.6) 2px 2px 0; font-size: 22px;} 
+ .weather--p {text-align: center; font-size: 18px; margin: 10px 0 0; } 
+ .weather__image{
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: -50px -50px;
+  width: 75%;
+ }
+ .day:hover  {
+opacity: 1;
+}
+
+
+ /*background: -webkit-gradient(linear, left top, left bottom, from(#adc7db), to(#6f9dbe));
+ background: -moz-linear-gradient(top, #b2bcc8, #adc7db); background-image: url('file:///D:/OSPanel/domains/weather/images/snow.png');
+/*.weather--a:link, 
+.weather--a:active, 
+ .weather--a:visited { display: block; clear: both; text-decoration: none; color: #222; font-size: 12px; }
+ .weather--a:hover { color: #000; text-decoration: underline; }
+ padding: 10px;
+  background-image: url("background-image: pictureurl('../images/s");
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: -45px -45px;
