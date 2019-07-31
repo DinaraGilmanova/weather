@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Open Sans";
-  src: url(file:///D:/weather/fonts/OpenSans.ttf');
+  src: url(file:///D:/weather/fonts/OpenSans.ttf);
 }
 @font-face {
-  font-family: Exo;
+  font-family: "Exo";
   src: url("file:///D:/weather/fonts/Exo.otf");
 }
 * {
