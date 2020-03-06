@@ -60,21 +60,22 @@ const currentData = [
     rain: false
   }
 ];
-const d = new Date();
+const d = new Date(1564488000000);
 d.setHours(16, 0, 0, 0);
 const n = d.getTime();
-arry = [];
+let arry = [];
 for (let i = 0; i < currentData.length; i++) {
-  if (n == currentData[i].date) {
+  if (n === currentData[i].date) {
     let currentDay = currentData[i].date;
     var nextDay = currentDay;
     for (k = 1; k < 4; k++) {
       nextDay += 24 * 60 * 60 * 1000;
       if (
         currentData[i + k] !== undefined &&
-        currentData[i + k].date == nextDay
+        currentData[i + k].date === nextDay
       ) {
-        var arry = [currentData[i + k].date];
+        arry = [currentData[i + k].date];
+
         arry +=
           "," +
           [currentData[i].date] +
@@ -111,10 +112,10 @@ const renderCards = function(weatherDay) {
   }
 
   const weatherImage = {
-    snow: "file:///D:/weather/images/snow.svg",
-    rain: "file:///D:/weather/images/rain.svg",
-    clouds: "file:///D:/weather/images/clouds.svg",
-    sun: "file:///D:/weather/images/sun.svg"
+    snow: "/images/snow.svg",
+    rain: "/images/rain.svg",
+    clouds: "/images/clouds.svg",
+    sun: "/images/sun.svg"
   };
   const picture = makeElement("img", "weather__image");
   if (weatherDay.cloudiness === "Облачно") {
